@@ -1,22 +1,23 @@
 @import "tailwindcss"
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* shared styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 .font-inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
 
 /* main styles */
 
-.hero-banner{
+.hero-banner {
     background-image: url('../images/hero-bg.png');
     max-width: 100%;
     height: 760px;
@@ -25,10 +26,15 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.btn-new{
+
+.btn-new {
     box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
 }
 
+/* hr{
+    width: 75%;
+    margin: 0 auto;
+} */
 
 
 
@@ -39,25 +45,49 @@
 
 /* responsive styles */
 @media screen and (max-width: 576px) {
-    .navbar{
+    .navbar {
         padding: 0 20px;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
-    .humburger{
+
+    .humburger {
         display: inline;
+    }
+
+    .about-info {
+        width: 95%;
+    }
+
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 40px;
+        width: 95%;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width:992px) {
-    .navbar{
+    .navbar {
         padding: 0 20px;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
-    .humburger{
+
+    .humburger {
         display: inline;
+    }
+
+    .about-info {
+        width: 95%;
+    }
+
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 40px;
+
     }
 }
