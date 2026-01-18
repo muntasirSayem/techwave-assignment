@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/techwave.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>TechWave</title>
 </head>
-<body>
-    <head>
 
-    </head>
+<body class="font-inter">
+
+    <header>
+        <nav class="navbar bg-[#1A0B2E] py-[30px] mx-auto border-b-[1px] border-[#412567]">
+            <div class="flex justify-between max-w-[1200px] mx-auto items-center">
+                <h1 class="font-extrabold text-[2rem]">
+                    <span class=" text-white">Tech</span><span
+                        class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-800">Wave</span>
+                </h1>
+                <div class="menu flex items-center justify-between">
+                    <ul class="flex gap-x-[32px] text-white text-4 font-medium mr-80">
+                        <li class="hover:bg-purple-950"><a href="">About</a></li>
+                        <li class="hover:bg-purple-950"><a href="">Episodes</a></li>
+                        <li class="hover:bg-purple-950"><a href="">Host</a></li>
+                    </ul>
+                    <button
+                        class="bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-800 px-[16px] py-[12.5px] rounded-full text-white font-semibold text-4 cursor-pointer transition-transform duration-300 hover:scale-105">
+                        Subscribe <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+                <!-- humburgerrrrrrrrrrrrrrrrrrrr -->
+                <img class="humburger hidden" src="icons/hamburger-menu.png" alt="">
+            </div>
+        </nav>
+        <section class="hero-banner pt-25">
+            <div class="banner-logo w-[350px] h-[350px] mx-auto mb-10 relative">
+                <img class="w-[350px] h-[350px]" src="images/hero-circle.png" alt="">
+                <img class="w-[117px] h-[175px] absolute top-20 left-29 transition-transform duration-300 hover:scale-105 cursor-pointer"
+                    src="images/microphone.png" alt="">
+                <button
+                    class="btn-new font-semibold text-[1.125rem] bg-green-400 px-4 py-2 rounded-full absolute top-5 right-5">NEW</button>
+            </div>
+            <div class="">
+                <h1 class="text-[4rem] text-white font-extrabold text-center mb-2">TextWave</h1>
+                <p class="text-center text-[1rem] text-white mb-6">Your daily dose of tech insights, productivity hacks,
+                    and personal growth</p>
+            </div>
+
+            <div class="flex justify-center gap-2">
+                <button
+                    class="flex gap-2 items-center bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-800 px-[20px] py-[12.5px] rounded-full text-white font-semibold text-4 cursor-pointer transition-transform duration-300 hover:scale-105">
+                    <img class="h-4" src="icons/spotify.png" alt=""> Listen on Spotify
+                </button>
+
+                <button
+                    class="flex gap-2 items-center border border border-[1px] border-green-400 text-green-400 text-4 font-semibold px-[20px] py-[12.5px] rounded-full cursor-pointer transition-transform duration-300 hover:scale-105">
+                    <img src="icons/message.png" alt=""> Subscribe
+                </button>
+            </div>
+        </section>
+    </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
