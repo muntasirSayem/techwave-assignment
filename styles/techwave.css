@@ -17,11 +17,10 @@
 
 /* main styles */
 
+/* banner section styles */
 .hero-banner {
     background-image: url('../images/hero-bg.png');
     max-width: 100%;
-    height: 760px;
-    margin: 0 auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,14 +29,6 @@
 .btn-new {
     box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
 }
-
-/* hr{
-    width: 75%;
-    margin: 0 auto;
-} */
-
-
-
 
 
 
@@ -57,14 +48,37 @@
         display: inline;
     }
 
-    .about-info {
+    .about-info,
+    hr {
         width: 95%;
     }
 
     .statistics {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statistics {
         padding-bottom: 40px;
         width: 95%;
+    }
+
+    .why-choose {
+        padding: 0 20px;
+    }
+
+    .why-choose h1 {
+        padding-top: 40px;
+    }
+
+    .why-choose-cards {
+        max-width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .why-choose-cards div {
+        padding: 24px;
+        grid-row: span 1;
+        grid-column: span 1;
     }
 }
 
@@ -81,7 +95,8 @@
         display: inline;
     }
 
-    .about-info {
+    .about-info,
+    hr {
         width: 95%;
     }
 
@@ -89,5 +104,20 @@
         grid-template-columns: repeat(2, 1fr);
         padding-bottom: 40px;
 
+    }
+
+    .why-choose {
+        padding: 0 20px;
+    }
+
+    .why-choose-cards {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-choose-cards div {
+        padding: 24px;
+        grid-row: span 1;
+        grid-column: span 1;
     }
 }
