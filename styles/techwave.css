@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* shared styles */
@@ -16,12 +15,12 @@
     font-optical-sizing: auto;
 }
 
+
 /* main styles */
 
 /* banner section styles */
 .hero-banner {
     background-image: url('../images/hero-bg.png');
-    max-width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,17 +30,29 @@
     box-shadow: 0 3px 27px 0 rgba(0, 255, 136, 0.5);
 }
 
+/* footer section styles */
+footer {
+    background-image: url('../images/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 
 
 
 /* responsive styles */
+
+/* small device styles */
 @media screen and (max-width: 576px) {
 
     .navbar,
+    .about-info,
     .why-choose,
     .featured-episodes,
-    .meet-host {
+    .meet-host,
+    footer {
         padding: 0 20px;
     }
 
@@ -49,7 +60,7 @@
         display: none;
     }
 
-    .humburger {
+    .hamburger {
         display: inline;
     }
 
@@ -60,7 +71,6 @@
 
     }
 
-    .about-info,
     hr {
         width: 95%;
     }
@@ -109,14 +119,35 @@
     .host-links {
         justify-content: center;
     }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-logo {
+        font-size: 3rem;
+    }
+
+    .footer-links {
+        white-space: nowrap;
+        width: 360px;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
 }
 
+
+/* medium device styles */
 @media screen and (min-width: 576px) and (max-width:992px) {
 
     .navbar,
+    .about-info,
     .why-choose,
     .featured-episodes,
-    .meet-host {
+    .meet-host,
+    footer {
         padding: 0 20px;
     }
 
@@ -124,11 +155,10 @@
         display: none;
     }
 
-    .humburger {
+    .hamburger {
         display: inline;
     }
 
-    .about-info,
     hr {
         width: 95%;
     }
@@ -168,5 +198,17 @@
 
     .host-links {
         justify-content: center;
+    }
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        white-space: nowrap;
+        width: 360px;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin: 24px auto;
     }
 }

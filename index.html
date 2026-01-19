@@ -15,28 +15,34 @@
 <body class="font-inter">
 
     <header>
+        <!-- navbar -->
         <nav class="navbar bg-[#1A0B2E] px-50 py-[30px] mx-auto border-b-[1px] border-[#412567]">
+
             <div class="flex justify-between mx-auto items-center">
                 <h1 class="font-extrabold text-[2rem]">
                     <span class=" text-white">Tech</span><span
                         class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-800">Wave</span>
                 </h1>
+
                 <div class="menu flex items-center justify-between">
                     <ul class="flex gap-x-[32px] text-white text-4 font-medium mr-80">
                         <li class="hover:bg-purple-950"><a href="">About</a></li>
                         <li class="hover:bg-purple-950"><a href="">Episodes</a></li>
                         <li class="hover:bg-purple-950"><a href="">Host</a></li>
                     </ul>
+
                     <button
                         class="bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-800 px-[16px] py-[12.5px] rounded-full text-white font-semibold text-4 cursor-pointer transition-transform duration-300 hover:scale-105">
                         Subscribe <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
-
-                <img class="humburger hidden cursor-pointer hover:bg-purple-950 p-1" src="icons/hamburger-menu.png"
+                <!-- hamburger menu icon-->
+                <img class="hamburger hidden cursor-pointer hover:bg-purple-950 p-1" src="icons/hamburger-menu.png"
                     alt="">
             </div>
         </nav>
+
+        <!-- banner section -->
         <section class="hero-banner py-25">
             <div class="banner-logo w-[350px] h-[350px] mx-auto mb-10 relative">
                 <img class="w-[350px] h-[350px]" src="images/hero-circle.png" alt="">
@@ -45,6 +51,7 @@
                 <button
                     class="btn-new font-semibold text-[1.125rem] bg-green-400 px-4 py-2 rounded-full absolute top-5 right-5">NEW</button>
             </div>
+            
             <div class="">
                 <h1 class="text-[4rem] text-white font-extrabold text-center mb-2">TechWave</h1>
                 <p class="text-center text-[1rem] text-[#ffffffd8] mb-6">Your daily dose of tech insights, productivity
@@ -65,11 +72,14 @@
             </div>
         </section>
     </header>
+
     <main>
+        <!-- about section -->
         <section class="about bg-[#1A0B2E]">
             <div class="about-info max-w-300 mx-auto">
                 <h1 class="text-center text-white text-[3rem] font-bold mb-4 pt-12.5">About the Podcast</h1>
-                <p class="about-description text-center text-[1rem] leading-10 text-[#ffffffc6]">TechWave is your go-to podcast for
+                <p class="about-description text-center text-[1rem] leading-10 text-[#ffffffc6]">TechWave is your go-to
+                    podcast for
                     staying ahead in the fast-paced world of technology.<br>
                     We break down complex topics into digestible insights, explore productivity strategies that actually
                     work,
@@ -78,7 +88,9 @@
                     Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
                 </p>
             </div>
+
             <hr class="w-3/4 mx-auto my-20">
+
             <div class="statistics grid grid-cols-4 max-w-300 mx-auto pb-30">
                 <div class="text-center">
                     <h1 class="text-[2rem] font-black text-[#00FF88] mb-4">150K+</h1>
@@ -99,9 +111,10 @@
             </div>
         </section>
 
+        <!-- why choose section -->
         <section class="why-choose bg-[#230E3D]">
             <h1 class="text-center text-white text-[3rem] font-bold mb-10 pt-30">Why Choose TechWave</h1>
-
+            <!-- cards -->
             <div class="why-choose-cards max-w-300 pb-30 mx-auto grid grid-cols-3 grid-rows-3 gap-7.5">
                 <div class="row-span-2 bg-[#351165] rounded-[40px] p-10 flex flex-col justify-center">
                     <img class="h-12.5 w-12.5" src="icons/headphone.png" alt="">
@@ -110,18 +123,21 @@
                         professional-grade recording equipment and expert audio engineering. Every episode is mastered
                         for optimal listening across all devices and platforms.</p>
                 </div>
+
                 <div class="col-span-2 bg-[#351165] rounded-[40px] p-10 flex flex-col justify-center">
                     <img class="h-13.75 w-10" src="icons/device.png" alt="">
                     <h4 class="text-[1.5rem] text-white font-bold my-4">Mobile Friendly</h4>
                     <p class="text-[1rem] leading-6 text-[#ffffff96]">Listen on the go with seamless mobile
                         experience and offline downloads.</p>
                 </div>
+
                 <div class="col-span-2 bg-[#351165] rounded-[40px] p-10 flex flex-col justify-center">
                     <img class="h-13.75 w-13.75" src="icons/location.png" alt="">
                     <h4 class="text-[1.5rem] text-white font-bold my-4">Global Community</h4>
                     <p class="text-[1rem] leading-6 text-[#ffffff96]">Connect with tech enthusiasts from
                         over 120 countries worldwide.</p>
                 </div>
+
                 <div class="col-span-2 bg-[#351165] rounded-[40px] p-10 flex flex-col justify-center">
                     <img class="h-12.5 w-13.75" src="icons/zap-fast.png" alt="">
                     <h4 class="text-[1.5rem] text-white font-bold my-4">Exclusive Interviews</h4>
@@ -129,6 +145,7 @@
                         titans, startup founders, and tech visionaries. Our host secures exclusive conversations you
                         won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
                 </div>
+
                 <div class="bg-[#351165] rounded-[40px] p-10 flex flex-col justify-center">
                     <img class="h-12.5 w-13.75" src="icons/resource.png" alt="">
                     <h4 class="text-[1.5rem] text-white font-bold my-4">Rich Resources</h4>
@@ -138,10 +155,11 @@
             </div>
         </section>
 
+        <!-- featured episodes section -->
         <section class="w-full bg-[#1A0B2E]">
             <div class="featured-episodes">
                 <h1 class="text-center text-white text-[3rem] font-bold mb-10 pt-30">Featured Episodes</h1>
-
+                <!-- videos -->
                 <div class="episodes max-w-300 grid grid-cols-3 gap-7.5 mx-auto">
                     <div class="w-95 rounded-3xl bg-[#250D44]">
                         <iframe class="rounded-t-3xl mb-6 w-95" height="214"
@@ -176,6 +194,7 @@
                             <img class="w-4" src="icons/clock.png" alt=""> 46 min
                         </div>
                     </div>
+
                     <div class="w-95 rounded-3xl bg-[#250D44]">
                         <iframe class="rounded-t-3xl mb-6 w-95" height="214"
                             src="https://www.youtube.com/embed/7ARBJQn6QkM?si=A4KbvNSbmNfDmQmZ"
@@ -193,7 +212,8 @@
                     </div>
                 </div>
             </div>
-
+            
+            <!-- host -->
             <div class="meet-host max-w-300 mx-auto pb-30">
                 <h1 class="text-center text-white text-[3rem] font-bold mb-10 pt-30">Meet the Host</h1>
 
@@ -201,6 +221,7 @@
                     <div>
                         <img src="images/host.png" alt="">
                     </div>
+
                     <div class="host-info max-w-224">
                         <h4 class="text-[2rem] text-white font-bold">Alex Kumar</h4>
                         <p class="text-[1rem] leading-6 text-[#ffffff96] my-4">
@@ -229,6 +250,33 @@
         </section>
     </main>
 
+    <footer class="py-30">
+        <div>
+            <h1 class="footer-logo text-center font-extrabold text-[3.75rem] mb-2">
+                <span class=" text-white">Tech</span><span
+                    class="bg-clip-text text-transparent bg-gradient-to-tr from-yellow-300 via-pink-600 to-purple-800">Wave</span>
+            </h1>
+        </div>
+
+        <div class="footer-links flex items-center gap-10 justify-center text-[1rem] font-medium text-[#ffffff96] mb-8">
+            <div class="flex items-center gap-2.5">
+                <img class="w-6" src="icons/spotify.png" alt=""><a href="">Spotify</a>
+            </div>
+            <div class="flex items-center gap-2.5">
+                <img class="w-6" src="icons/apple-podcast.png" alt=""><a href="">Apple Podcasts</a>
+            </div>
+            <div class="flex items-center gap-2.5">
+                <img class="w-6" src="icons/youtube-podcast.png" alt=""><a href="">YouTube</a>
+            </div>
+            <div class="flex items-center gap-2.5">
+                <img class="w-6" src="icons/twitter.png" alt=""><a href="">Twitter</a>
+            </div>
+        </div>
+
+        <div class="text-[1rem] leading-6 text-[#ffffff96] text-center">
+            &copy; 2026 TechWave Podcast. All rights reserved.
+        </div>
+    </footer>
 </body>
 
 </html>
