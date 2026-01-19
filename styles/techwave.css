@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* shared styles */
@@ -36,7 +37,11 @@
 
 /* responsive styles */
 @media screen and (max-width: 576px) {
-    .navbar {
+
+    .navbar,
+    .why-choose,
+    .featured-episodes,
+    .meet-host {
         padding: 0 20px;
     }
 
@@ -48,6 +53,13 @@
         display: inline;
     }
 
+    .hero-banner,
+    .statistics,
+    .why-choose-cards {
+        padding-bottom: 40px;
+
+    }
+
     .about-info,
     hr {
         width: 95%;
@@ -55,23 +67,18 @@
 
     .statistics {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .statistics {
-        padding-bottom: 40px;
         width: 95%;
     }
 
-    .why-choose {
-        padding: 0 20px;
-    }
-
-    .why-choose h1 {
+    .why-choose h1,
+    .featured-episodes h1,
+    .meet-host h1 {
         padding-top: 40px;
+        font-size: 32px;
     }
 
-    .why-choose-cards {
-        max-width: 100%;
+    .why-choose-cards,
+    .episodes {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -80,10 +87,36 @@
         grid-row: span 1;
         grid-column: span 1;
     }
+
+    .episodes div,
+    .episodes div iframe {
+        width: 100%;
+    }
+
+    .meet-host {
+        padding-bottom: 40px;
+    }
+
+    .host {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .host-info {
+        text-align: center;
+    }
+
+    .host-links {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width:992px) {
-    .navbar {
+
+    .navbar,
+    .why-choose,
+    .featured-episodes,
+    .meet-host {
         padding: 0 20px;
     }
 
@@ -100,18 +133,8 @@
         width: 95%;
     }
 
-    .statistics {
-        grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 40px;
-
-    }
-
-    .why-choose {
-        padding: 0 20px;
-    }
-
+    .statistics,
     .why-choose-cards {
-        max-width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -119,5 +142,31 @@
         padding: 24px;
         grid-row: span 1;
         grid-column: span 1;
+    }
+
+    .episodes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .episodes div,
+    .episodes div iframe {
+        width: 100%;
+    }
+
+    .meet-host {
+        padding-bottom: 120px;
+    }
+
+    .host {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .host-info {
+        text-align: center;
+    }
+
+    .host-links {
+        justify-content: center;
     }
 }

@@ -32,8 +32,9 @@
                         Subscribe <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
-                <!-- humburgerrrrrrrrrrrrrrrrrrrr -->
-                <img class="humburger hidden" src="icons/hamburger-menu.png" alt="">
+
+                <img class="humburger hidden cursor-pointer hover:bg-purple-950 p-1" src="icons/hamburger-menu.png"
+                    alt="">
             </div>
         </nav>
         <section class="hero-banner py-25">
@@ -66,9 +67,9 @@
     </header>
     <main>
         <section class="about bg-[#1A0B2E]">
-            <div class="about-info w-3/4 mx-auto">
+            <div class="about-info max-w-300 mx-auto">
                 <h1 class="text-center text-white text-[3rem] font-bold mb-4 pt-12.5">About the Podcast</h1>
-                <p class="text-center text-[1rem] leading-10 text-[#ffffffc6]">TechWave is your go-to podcast for
+                <p class="about-description text-center text-[1rem] leading-10 text-[#ffffffc6]">TechWave is your go-to podcast for
                     staying ahead in the fast-paced world of technology.<br>
                     We break down complex topics into digestible insights, explore productivity strategies that actually
                     work,
@@ -78,7 +79,7 @@
                 </p>
             </div>
             <hr class="w-3/4 mx-auto my-20">
-            <div class="statistics grid grid-cols-4 w-3/4 mx-auto pb-30">
+            <div class="statistics grid grid-cols-4 max-w-300 mx-auto pb-30">
                 <div class="text-center">
                     <h1 class="text-[2rem] font-black text-[#00FF88] mb-4">150K+</h1>
                     <p class="text-[1rem] leading-10 text-[#ffffffd8]">MONTHLY LISTENERS</p>
@@ -101,7 +102,7 @@
         <section class="why-choose bg-[#230E3D]">
             <h1 class="text-center text-white text-[3rem] font-bold mb-10 pt-30">Why Choose TechWave</h1>
 
-            <div class="why-choose-cards max-w-3/4 pb-30 mx-auto grid grid-cols-3 grid-rows-3 gap-7.5">
+            <div class="why-choose-cards max-w-300 pb-30 mx-auto grid grid-cols-3 grid-rows-3 gap-7.5">
                 <div class="row-span-2 bg-[#351165] rounded-[40px] p-10 flex flex-col justify-center">
                     <img class="h-12.5 w-12.5" src="icons/headphone.png" alt="">
                     <h4 class="text-[1.5rem] text-white font-bold my-4">Premium Audio Quality</h4>
@@ -133,6 +134,96 @@
                     <h4 class="text-[1.5rem] text-white font-bold my-4">Rich Resources</h4>
                     <p class="text-[1rem] leading-6 text-[#ffffff96]">Access show notes, transcripts, and
                         additional learning materials for every episode.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full bg-[#1A0B2E]">
+            <div class="featured-episodes">
+                <h1 class="text-center text-white text-[3rem] font-bold mb-10 pt-30">Featured Episodes</h1>
+
+                <div class="episodes max-w-300 grid grid-cols-3 gap-7.5 mx-auto">
+                    <div class="w-95 rounded-3xl bg-[#250D44]">
+                        <iframe class="rounded-t-3xl mb-6 w-95" height="214"
+                            src="https://www.youtube.com/embed/oX7OduG1YmI?si=bOsrCOt8Z8569xxq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <h4 class="text-[1.5rem] text-white font-bold px-6">The Future Mark Zuckerberg Is Trying To
+                            Build</h4>
+
+                        <p class="text-[1rem] leading-6 text-[#ffffff96] my-3 px-6">Mark Zuckerberg and his team are
+                            imagining the future billions of people might live in, soon,
+                            and building towards it.</p>
+                        <div class="flex items-center gap-1.5 text-4 text-[#00FF88] font-semibold pl-6 pb-6">
+                            <img class="w-4" src="icons/clock.png" alt=""> 47 min
+                        </div>
+                    </div>
+
+                    <div class="w-95 rounded-3xl bg-[#250D44]">
+                        <iframe class="rounded-t-3xl mb-6 w-95" height="214"
+                            src="https://www.youtube.com/embed/-Kd7I6GrdGM?si=8j_dkIEZo4UEsRQn"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h4 class="text-[1.5rem] text-white font-bold px-6">8 Realistic Healthy Habits That Make a Huge
+                            Difference</h4>
+                        <p class="text-[1rem] leading-6 text-[#ffffff96] my-3 px-6">Getting the 8 science-backed hacks
+                            to lower your stress, amplify your happiness, and make you
+                            healthier.</p>
+                        <div class="flex items-center gap-1.5 text-4 text-[#00FF88] font-semibold pl-6 pb-6">
+                            <img class="w-4" src="icons/clock.png" alt=""> 46 min
+                        </div>
+                    </div>
+                    <div class="w-95 rounded-3xl bg-[#250D44]">
+                        <iframe class="rounded-t-3xl mb-6 w-95" height="214"
+                            src="https://www.youtube.com/embed/7ARBJQn6QkM?si=A4KbvNSbmNfDmQmZ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h4 class="text-[1.5rem] text-white font-bold px-6">NVIDIA CEO Jensen Huang's Vision for the
+                            Future</h4>
+                        <p class="text-[1rem] leading-6 text-[#ffffff96] my-3 px-6">If you want to know what the most
+                            important people building the future are imagining it will
+                            look like, watch this.</p>
+                        <div class="flex items-center gap-1.5 text-4 text-[#00FF88] font-semibold pl-6 pb-6">
+                            <img class="w-4" src="icons/clock.png" alt=""> 1 hour 3 min
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="meet-host max-w-300 mx-auto pb-10">
+                <h1 class="text-center text-white text-[3rem] font-bold mb-10 pt-30">Meet the Host</h1>
+
+                <div class="host flex items-center gap-6 bg-[#250D44] rounded-[40px] p-10">
+                    <div>
+                        <img src="images/host.png" alt="">
+                    </div>
+                    <div class="host-info max-w-224">
+                        <h4 class="text-[2rem] text-white font-bold">Alex Kumar</h4>
+                        <p class="text-[1rem] leading-6 text-[#ffffff96] my-4">
+                            Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech
+                            industry for over 10 years, working with startups and Fortune 500 companies. Through
+                            TechWave, Alex shares insights from industry leaders and practical advice for anyone looking
+                            to grow in tech.
+                        </p>
+                        <div class="host-links flex items-center gap-2">
+                            <div class="border border-[#533C72] rounded-full p-3">
+                                <img class="w-5 h-5" src="icons/linkedin.png" alt="">
+                            </div>
+                            <div class="border border-[#533C72] rounded-full p-3">
+                                <img class="w-5 h-5" src=" icons/x.png" alt="">
+                            </div>
+                            <div class="border border-[#533C72] rounded-full p-3">
+                                <img class="w-5 h-5" src="icons/instagram.png" alt="">
+                            </div>
+                            <div class="border border-[#533C72] rounded-full p-3">
+                                <img class="w-5 h-5" src="icons/youtube.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
