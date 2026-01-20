@@ -64,6 +64,30 @@ footer {
         display: inline;
     }
 
+    .banner-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-logo-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-logo-mic {
+        width: 67px;
+        height: 100px;
+        margin: 0 auto;
+        top: 50px;
+        left: 66.5px;
+    }
+
+    .btn-new {
+        padding: 4px 8px;
+        top: 3px;
+        right: 3px;
+    }
+
     .hero-banner,
     .statistics,
     .why-choose-cards {
